@@ -1,0 +1,36 @@
+#overlay {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  .loader {
+    position: absolute;
+    top: 40%;
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 106px;
+    left: 35%;
+    margin: auto;
+    color: white;
+    background-image: url('../../assets/img/loader.png');
+    animation: mymove 5s infinite;
+  }
+
+  @keyframes mymove {
+    50% {transform: rotate(180deg);}
+  }
+}
+@media (min-width: 768px) {
+  #overlay {
+    .loader {
+      left: 46%;
+    }
+  }
+}

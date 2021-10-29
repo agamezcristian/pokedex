@@ -1,0 +1,50 @@
+.text-p {
+  margin-top: 40px!important;
+  margin-bottom: 0px!important;
+}
+.text-s {
+  margin-top: 0px!important;
+}
+.pokemon-home {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin: 2.225rem auto 0 auto;
+
+  .pokemon-home__header {
+    position: relative;
+
+    img {
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      background-repeat: no-repeat;
+      background-image: url("../assets/img/backgroundPikachu.png");
+      background-position: 46px 67px;
+      max-width: 100%;
+    }
+  }
+}
+.buttonPokemon {
+
+    padding: 11px 20px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 60px;
+    padding-left: 50px!important;
+    border: none;
+    padding-right: 50px!important;
+    text-decoration: none;
+    background-color: #F22539;
+    margin-right: 10px;
+
+    &.router-link-exact-active {
+      background-color: #F22539;
+    }
+
+  .active {
+    background-color: #F22539;
+  }
+}
